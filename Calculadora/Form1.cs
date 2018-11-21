@@ -1,172 +1,152 @@
 ﻿using System;
-using System.Collections;
-using System.Collections.Generic;
-using System.Linq;
 using System.Windows.Forms;
 
 namespace Calculadora
 {
     public partial class Form1 : Form
     {
-        int operaciones = 0;
-        string ultimoSigno = "";
+        string auxiliar;//Va a tener los numeros que se ingresan
+        double primero;
+        double segundo;
+        string signo = "";
+
+
         public Form1()
         {
             InitializeComponent();
-            binding();
-            this.KeyPreview = true;
-            this.KeyDown += new KeyEventHandler(teclas);
-
         }
-
-        private void teclas(object sender, KeyEventArgs e)
-        {
-            string tecla = "";
-
-
-            switch (e.KeyCode) {
-                case Keys.Back:
-                    eliminarUltimo();
-                    break;
-                case Keys.Multiply:
-                    tecla = "*";
-                    break;
-                case Keys.Subtract:
-                    tecla = "-";
-                    break;
-                case Keys.Add:
-                    tecla = "+";
-                    break;
-                case Keys.Divide:
-                    tecla = "/";
-                    break;
-                case Keys.D0:
-                    tecla = "0";
-                    break;
-                case Keys.D1:
-                    tecla = "1";
-                    break;
-                case Keys.D2:
-                    tecla = "2";
-                    break;
-                case Keys.D3:
-                    tecla = "3";
-                    break;
-                case Keys.D4:
-                    tecla = "4";
-                    break;
-                case Keys.D5:
-                    tecla = "5";
-                    break;
-                case Keys.D6:
-                    tecla = "6";
-                    break;
-                case Keys.D7:
-                    tecla = "7";
-                    break;
-                case Keys.D8:
-                    tecla = "8";
-                    break;
-                case Keys.D9:
-                    tecla = "9";
-                    break;
-                
-            }
-            //Esto es para evitar signos repetidos
-            if(tecla != ultimoSigno)
-            {
-                mostrar.AppendText(tecla);
-            }
-            if (tecla.Equals("+") || tecla.Equals("-") || tecla.Equals("/") || tecla.Equals("*"))
-            {
-                ultimoSigno = tecla;
-            }
-            else {
-                ultimoSigno = "";
-            }
-                
-            
-            
-        }
-        
-
-            
-        
-
-
-        public void binding() {
-            foreach(var boton in this.Controls.OfType<Button>())
-            {
-                if(boton != borrar && boton != limpiar && boton!=igual)
-                {
-                    boton.Click += botonPresionado;
-                }
-                if (boton == sumar) {
-                    operaciones++;
-                }
-                
-            }
-        }
-        
-        public void botonPresionado(object sender, EventArgs e) {
-            mostrar.AppendText((sender as Button).Text);
-        }
-
 
         private void Form1_Load(object sender, EventArgs e)
         {
 
         }
-
-       
-
-
-
         private void limpiar_Click(object sender, EventArgs e)
         {
-            mostrar.ResetText();
+            mostrar.Text = "";
+            auxiliar = "";
         }
 
         private void borrar_Click(object sender, EventArgs e)
         {
-            eliminarUltimo();
+            mostrar.Text = mostrar.Text.Substring(0, mostrar.Text.Length - 1);
         }
         public void eliminarUltimo() {
-            if(mostrar.Text.Length >= 1)
-            {
-                mostrar.Text = mostrar.Text.Substring(0, mostrar.Text.Length - 1);
-            }
+            
             
         }
-
         private void igual_Click(object sender, EventArgs e)
-        {//Hay que basarse en que la cantidad de 
-            //elementos es 1+ a la cantidad de operadores
-            string entrada = mostrar.Text;
-            double suma = 0;
-            List<Double> numeros = new List<Double>();
-            
-             for (int i = 0; i < entrada.Length; i++) {
-                if (entrada[i].Equals('+')) {
-                    int size = entrada.Length-(i+1);
-                    numeros.Add(Double.Parse(entrada.Substring(0, i)));
-                    entrada = entrada.Substring(i + 1, size);
-                    i = 0;
-                }
-                
-             }
-            for (int i = 0; i < numeros.Count; i++) {
-                if (i != 0) {
-                    suma += numeros[i];
-                }
-            }
-            mostrar.Text = suma.ToString();
-            
+        {
+            segundo = Double.Parse(auxiliar);
+            mostrar.Text=Operacion.obtenerResultado(primero, segundo, signo).ToString();
+            auxiliar= Operacion.obtenerResultado(primero, segundo, signo).ToString();
+            signo = "";
         }
 
         private void mostrar_TextChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void uno_Click(object sender, EventArgs e)
+        {
+            mostrar.Text += "1";
+            auxiliar += "1";
+        }
+
+        private void dos_Click(object sender, EventArgs e)
+        {
+            mostrar.Text += "2";
+            auxiliar += "2";
+        }
+
+        private void tres_Click(object sender, EventArgs e)
+        {
+            mostrar.Text += "3";
+            auxiliar += "3";
+        }
+
+        private void cuatro_Click(object sender, EventArgs e)
+        {
+            mostrar.Text += "4";
+            auxiliar += "4";
+        }
+
+        private void cinco_Click(object sender, EventArgs e)
+        {
+            mostrar.Text += "5";
+            auxiliar += "5";
+        }
+
+        private void seis_Click(object sender, EventArgs e)
+        {
+            mostrar.Text += "6";
+            auxiliar += "6";
+        }
+
+        private void siete_Click(object sender, EventArgs e)
+        {
+            mostrar.Text += "7";
+            auxiliar += "7";
+        }
+
+        private void ocho_Click(object sender, EventArgs e)
+        {
+            mostrar.Text += "8";
+            auxiliar += "8";
+        }
+
+        private void nueve_Click(object sender, EventArgs e)
+        {
+            mostrar.Text += "9";
+            auxiliar += "9";
+        }
+
+        private void cero_Click(object sender, EventArgs e)
+        {
+            mostrar.Text += "0";
+            auxiliar += "0";
+        }
+
+        private void coma_Click(object sender, EventArgs e)
+        {
+            mostrar.Text += ",";
+            auxiliar += ",";
+        }
+
+        private void sumar_Click(object sender, EventArgs e)
+        {
+            agregarOperador("+");
+        }
+
+        private void restar_Click(object sender, EventArgs e)
+        {
+            agregarOperador("-");
+        }
+
+        private void multiplicar_Click(object sender, EventArgs e)
+        {
+            agregarOperador("*");
+        }
+
+        private void dividir_Click(object sender, EventArgs e)
+        {
+            agregarOperador("/");
+        }
+        public void agregarOperador(string operador) {
+
+            
+            if (!signo.Equals(""))
+            {
+                segundo = Double.Parse(auxiliar);
+                primero = Operacion.obtenerResultado(primero, segundo, signo);
+                
+            }
+            else {
+                primero = Double.Parse(auxiliar);
+            }
+            auxiliar = "";
+            signo = operador;
+            mostrar.Text += operador;
         }
     }
 }

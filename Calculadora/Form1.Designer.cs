@@ -53,6 +53,7 @@
             // 
             // dos
             // 
+            this.dos.BackColor = System.Drawing.Color.White;
             this.dos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.dos.Font = new System.Drawing.Font("Microsoft YaHei UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dos.Location = new System.Drawing.Point(78, 133);
@@ -60,10 +61,12 @@
             this.dos.Size = new System.Drawing.Size(60, 60);
             this.dos.TabIndex = 0;
             this.dos.Text = "2";
-            this.dos.UseVisualStyleBackColor = true;
+            this.dos.UseVisualStyleBackColor = false;
+            this.dos.Click += new System.EventHandler(this.dos_Click);
             // 
             // nueve
             // 
+            this.nueve.BackColor = System.Drawing.Color.White;
             this.nueve.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.nueve.Font = new System.Drawing.Font("Microsoft YaHei UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.nueve.Location = new System.Drawing.Point(144, 265);
@@ -71,10 +74,12 @@
             this.nueve.Size = new System.Drawing.Size(60, 60);
             this.nueve.TabIndex = 1;
             this.nueve.Text = "9";
-            this.nueve.UseVisualStyleBackColor = true;
+            this.nueve.UseVisualStyleBackColor = false;
+            this.nueve.Click += new System.EventHandler(this.nueve_Click);
             // 
             // seis
             // 
+            this.seis.BackColor = System.Drawing.Color.White;
             this.seis.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.seis.Font = new System.Drawing.Font("Microsoft YaHei UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.seis.Location = new System.Drawing.Point(144, 199);
@@ -82,10 +87,12 @@
             this.seis.Size = new System.Drawing.Size(60, 60);
             this.seis.TabIndex = 2;
             this.seis.Text = "6";
-            this.seis.UseVisualStyleBackColor = true;
+            this.seis.UseVisualStyleBackColor = false;
+            this.seis.Click += new System.EventHandler(this.seis_Click);
             // 
             // tres
             // 
+            this.tres.BackColor = System.Drawing.Color.White;
             this.tres.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.tres.Font = new System.Drawing.Font("Microsoft YaHei UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tres.Location = new System.Drawing.Point(144, 133);
@@ -93,10 +100,12 @@
             this.tres.Size = new System.Drawing.Size(60, 60);
             this.tres.TabIndex = 3;
             this.tres.Text = "3";
-            this.tres.UseVisualStyleBackColor = true;
+            this.tres.UseVisualStyleBackColor = false;
+            this.tres.Click += new System.EventHandler(this.tres_Click);
             // 
             // siete
             // 
+            this.siete.BackColor = System.Drawing.Color.White;
             this.siete.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.siete.Font = new System.Drawing.Font("Microsoft YaHei UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.siete.Location = new System.Drawing.Point(12, 265);
@@ -104,10 +113,12 @@
             this.siete.Size = new System.Drawing.Size(60, 60);
             this.siete.TabIndex = 4;
             this.siete.Text = "7";
-            this.siete.UseVisualStyleBackColor = true;
+            this.siete.UseVisualStyleBackColor = false;
+            this.siete.Click += new System.EventHandler(this.siete_Click);
             // 
             // ocho
             // 
+            this.ocho.BackColor = System.Drawing.Color.White;
             this.ocho.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.ocho.Font = new System.Drawing.Font("Microsoft YaHei UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ocho.Location = new System.Drawing.Point(78, 265);
@@ -115,10 +126,12 @@
             this.ocho.Size = new System.Drawing.Size(60, 60);
             this.ocho.TabIndex = 5;
             this.ocho.Text = "8";
-            this.ocho.UseVisualStyleBackColor = true;
+            this.ocho.UseVisualStyleBackColor = false;
+            this.ocho.Click += new System.EventHandler(this.ocho_Click);
             // 
             // cinco
             // 
+            this.cinco.BackColor = System.Drawing.Color.White;
             this.cinco.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.cinco.Font = new System.Drawing.Font("Microsoft YaHei UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cinco.Location = new System.Drawing.Point(78, 199);
@@ -126,10 +139,12 @@
             this.cinco.Size = new System.Drawing.Size(60, 60);
             this.cinco.TabIndex = 6;
             this.cinco.Text = "5";
-            this.cinco.UseVisualStyleBackColor = true;
+            this.cinco.UseVisualStyleBackColor = false;
+            this.cinco.Click += new System.EventHandler(this.cinco_Click);
             // 
             // cuatro
             // 
+            this.cuatro.BackColor = System.Drawing.Color.White;
             this.cuatro.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.cuatro.Font = new System.Drawing.Font("Microsoft YaHei UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cuatro.Location = new System.Drawing.Point(12, 199);
@@ -137,10 +152,12 @@
             this.cuatro.Size = new System.Drawing.Size(60, 60);
             this.cuatro.TabIndex = 7;
             this.cuatro.Text = "4";
-            this.cuatro.UseVisualStyleBackColor = true;
+            this.cuatro.UseVisualStyleBackColor = false;
+            this.cuatro.Click += new System.EventHandler(this.cuatro_Click);
             // 
             // uno
             // 
+            this.uno.BackColor = System.Drawing.Color.White;
             this.uno.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.uno.Font = new System.Drawing.Font("Microsoft YaHei UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.uno.Location = new System.Drawing.Point(12, 133);
@@ -148,10 +165,12 @@
             this.uno.Size = new System.Drawing.Size(60, 60);
             this.uno.TabIndex = 8;
             this.uno.Text = "1";
-            this.uno.UseVisualStyleBackColor = true;
+            this.uno.UseVisualStyleBackColor = false;
+            this.uno.Click += new System.EventHandler(this.uno_Click);
             // 
             // sumar
             // 
+            this.sumar.BackColor = System.Drawing.Color.White;
             this.sumar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.sumar.Font = new System.Drawing.Font("Microsoft YaHei UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.sumar.Location = new System.Drawing.Point(210, 265);
@@ -159,10 +178,12 @@
             this.sumar.Size = new System.Drawing.Size(60, 60);
             this.sumar.TabIndex = 9;
             this.sumar.Text = "+";
-            this.sumar.UseVisualStyleBackColor = true;
+            this.sumar.UseVisualStyleBackColor = false;
+            this.sumar.Click += new System.EventHandler(this.sumar_Click);
             // 
             // restar
             // 
+            this.restar.BackColor = System.Drawing.Color.White;
             this.restar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.restar.Font = new System.Drawing.Font("Microsoft YaHei UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.restar.Location = new System.Drawing.Point(210, 331);
@@ -170,10 +191,12 @@
             this.restar.Size = new System.Drawing.Size(60, 60);
             this.restar.TabIndex = 10;
             this.restar.Text = "-";
-            this.restar.UseVisualStyleBackColor = true;
+            this.restar.UseVisualStyleBackColor = false;
+            this.restar.Click += new System.EventHandler(this.restar_Click);
             // 
             // multiplicar
             // 
+            this.multiplicar.BackColor = System.Drawing.Color.White;
             this.multiplicar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.multiplicar.Font = new System.Drawing.Font("Microsoft YaHei UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.multiplicar.Location = new System.Drawing.Point(210, 199);
@@ -181,10 +204,12 @@
             this.multiplicar.Size = new System.Drawing.Size(60, 60);
             this.multiplicar.TabIndex = 11;
             this.multiplicar.Text = "*";
-            this.multiplicar.UseVisualStyleBackColor = true;
+            this.multiplicar.UseVisualStyleBackColor = false;
+            this.multiplicar.Click += new System.EventHandler(this.multiplicar_Click);
             // 
             // dividir
             // 
+            this.dividir.BackColor = System.Drawing.Color.White;
             this.dividir.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.dividir.Font = new System.Drawing.Font("Microsoft YaHei UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dividir.Location = new System.Drawing.Point(210, 133);
@@ -192,7 +217,8 @@
             this.dividir.Size = new System.Drawing.Size(60, 60);
             this.dividir.TabIndex = 12;
             this.dividir.Text = "/";
-            this.dividir.UseVisualStyleBackColor = true;
+            this.dividir.UseVisualStyleBackColor = false;
+            this.dividir.Click += new System.EventHandler(this.dividir_Click);
             // 
             // mostrar
             // 
@@ -204,10 +230,12 @@
             this.mostrar.ReadOnly = true;
             this.mostrar.Size = new System.Drawing.Size(258, 28);
             this.mostrar.TabIndex = 13;
+            this.mostrar.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.mostrar.TextChanged += new System.EventHandler(this.mostrar_TextChanged);
             // 
             // limpiar
             // 
+            this.limpiar.BackColor = System.Drawing.Color.White;
             this.limpiar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.limpiar.Font = new System.Drawing.Font("Microsoft YaHei UI", 11.25F);
             this.limpiar.Location = new System.Drawing.Point(78, 67);
@@ -215,11 +243,12 @@
             this.limpiar.Size = new System.Drawing.Size(60, 60);
             this.limpiar.TabIndex = 14;
             this.limpiar.Text = "C";
-            this.limpiar.UseVisualStyleBackColor = true;
+            this.limpiar.UseVisualStyleBackColor = false;
             this.limpiar.Click += new System.EventHandler(this.limpiar_Click);
             // 
             // borrar
             // 
+            this.borrar.BackColor = System.Drawing.Color.White;
             this.borrar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.borrar.Font = new System.Drawing.Font("Microsoft YaHei UI", 11.25F);
             this.borrar.Location = new System.Drawing.Point(12, 67);
@@ -227,11 +256,12 @@
             this.borrar.Size = new System.Drawing.Size(60, 60);
             this.borrar.TabIndex = 15;
             this.borrar.Text = "Del";
-            this.borrar.UseVisualStyleBackColor = true;
+            this.borrar.UseVisualStyleBackColor = false;
             this.borrar.Click += new System.EventHandler(this.borrar_Click);
             // 
             // igual
             // 
+            this.igual.BackColor = System.Drawing.Color.White;
             this.igual.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.igual.Font = new System.Drawing.Font("Microsoft YaHei UI", 11.25F);
             this.igual.Location = new System.Drawing.Point(144, 331);
@@ -239,11 +269,12 @@
             this.igual.Size = new System.Drawing.Size(60, 60);
             this.igual.TabIndex = 16;
             this.igual.Text = "=";
-            this.igual.UseVisualStyleBackColor = true;
+            this.igual.UseVisualStyleBackColor = false;
             this.igual.Click += new System.EventHandler(this.igual_Click);
             // 
             // cero
             // 
+            this.cero.BackColor = System.Drawing.Color.White;
             this.cero.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.cero.Font = new System.Drawing.Font("Microsoft YaHei UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cero.Location = new System.Drawing.Point(78, 331);
@@ -251,10 +282,12 @@
             this.cero.Size = new System.Drawing.Size(60, 60);
             this.cero.TabIndex = 17;
             this.cero.Text = "0";
-            this.cero.UseVisualStyleBackColor = true;
+            this.cero.UseVisualStyleBackColor = false;
+            this.cero.Click += new System.EventHandler(this.cero_Click);
             // 
             // coma
             // 
+            this.coma.BackColor = System.Drawing.Color.White;
             this.coma.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.coma.Font = new System.Drawing.Font("Microsoft YaHei UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.coma.Location = new System.Drawing.Point(12, 331);
@@ -262,10 +295,12 @@
             this.coma.Size = new System.Drawing.Size(60, 60);
             this.coma.TabIndex = 18;
             this.coma.Text = ",";
-            this.coma.UseVisualStyleBackColor = true;
+            this.coma.UseVisualStyleBackColor = false;
+            this.coma.Click += new System.EventHandler(this.coma_Click);
             // 
             // parentesisIzquierdo
             // 
+            this.parentesisIzquierdo.BackColor = System.Drawing.Color.White;
             this.parentesisIzquierdo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.parentesisIzquierdo.Font = new System.Drawing.Font("Microsoft YaHei UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.parentesisIzquierdo.Location = new System.Drawing.Point(144, 67);
@@ -273,10 +308,11 @@
             this.parentesisIzquierdo.Size = new System.Drawing.Size(60, 60);
             this.parentesisIzquierdo.TabIndex = 19;
             this.parentesisIzquierdo.Text = "(";
-            this.parentesisIzquierdo.UseVisualStyleBackColor = true;
+            this.parentesisIzquierdo.UseVisualStyleBackColor = false;
             // 
             // parentesisDerecho
             // 
+            this.parentesisDerecho.BackColor = System.Drawing.Color.White;
             this.parentesisDerecho.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.parentesisDerecho.Font = new System.Drawing.Font("Microsoft YaHei UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.parentesisDerecho.Location = new System.Drawing.Point(210, 67);
@@ -284,12 +320,13 @@
             this.parentesisDerecho.Size = new System.Drawing.Size(60, 60);
             this.parentesisDerecho.TabIndex = 20;
             this.parentesisDerecho.Text = ")";
-            this.parentesisDerecho.UseVisualStyleBackColor = true;
+            this.parentesisDerecho.UseVisualStyleBackColor = false;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.DarkGray;
             this.ClientSize = new System.Drawing.Size(288, 419);
             this.Controls.Add(this.parentesisDerecho);
             this.Controls.Add(this.parentesisIzquierdo);
